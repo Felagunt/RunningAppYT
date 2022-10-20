@@ -27,7 +27,7 @@ class MainViewModel @ViewModelInject constructor(
 
     val runs = MediatorLiveData<List<Run>>()
 
-    var sortType = SortType.DATE
+    var  sortType = SortType.DATE
 
     init {
         runs.addSource(runsSortedByDate) { result ->
